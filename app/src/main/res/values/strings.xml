@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RisoDivisor</string>
+    <string name="container_weight">Container weight</string>
+    <string name="_000">000</string>
+    <string name="to_split_in_two_empty_the_container_until">To split in two, empty the container until</string>
+    <string name="fill_hint">Please fill all fields</string>
+    <string name="weight_hint">Total weight should be higher than container one</string>
+    <string name="total_weight">Total weight</string>
+</resources>

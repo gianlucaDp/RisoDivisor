@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gianlucadp.risodivisor.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/container_weight"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/tv_container"
+        android:hint="@string/_000"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_container"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="@string/total_weight"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_container"
+        android:layout_toEndOf="@id/tv_total"
+        android:layout_margin="10dp"
+        android:hint="@string/_000"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_text_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fab_calculate"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/to_split_in_two_empty_the_container_until"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_text_value"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_text_result"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/et_container"
+        android:src="@drawable/ic_save_24dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_calculate"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_total"
+        android:layout_centerHorizontal="true"
+
+        android:src="@drawable/ic_autorenew_24dp" />
+
+</RelativeLayout>
